@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galos Zapatería</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link rel="shortcut icon" type="logo" href="IMG/favicong.gif">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+</head>
+<header class="shadow">
+	<div class="centermenu ">
+   <div class="logo"><a href="index.html"><img src="IMG/logo 1.jpg"></a></div>
+   <nav class="menu">
+   
+   	<a href="#contacto">Contacto &darr;</a>
+<strong>
+	<a  href="¿Quiénes somos.html">¿Quiénes somos?</a>
+	<a  href="Productos.html">Productos</a>
+</strong>
+</nav>
+</div>
+</header>
+<body>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="IMG/img2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="IMG/img1.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+<div class="bod">
+<strong><h1>Productos más vendidos</h1></strong>
+<ul class=" list">
+	<li><div><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><img src="IMG/Zapatos/Vendidos/1.jpg"></a></div>
+	<a href="C:/Users/HP/Desktop/Zapatería galos/productos/Genero/Femenino.html">Mujer, </a><a href="C:/Users/HP/Desktop/Zapatería galos/productos/Estilos/Clasico.html">clasico</a><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><h5>Mocasín vogue</h5></a></li>
+	<li><div><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><img src="IMG/Zapatos/Vendidos/2.jpg"></a></div>
+	<a href="C:/Users/HP/Desktop/Zapatería galos/productos/Genero/Masculino.html">Hombre, </a><a href="C:/Users/HP/Desktop/Zapatería galos/productos/Estilos/Clasico.html">clasico</a><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><h5>Mocasín Frozen</h5></a></li>
+	<li><div><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><img src="IMG/Zapatos/Vendidos/3.jpg"></a></div>
+	<a href="C:/Users/HP/Desktop/Zapatería galos/productos/Genero/Masculino.html">Hombre, </a><a href="C:/Users/HP/Desktop/Zapatería galos/productos/Estilos/Moderno.html">moderno</a><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><h5>Pancha Suela</h5></a></li>
+	<li><div><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><img src="IMG/Zapatos/Vendidos/4.jpg"></a></div>
+	<a href="C:/Users/HP/Desktop/Zapatería galos/productos/Genero/Femenino.html">Mujer, </a><a href="C:/Users/HP/Desktop/Zapatería galos/productos/Estilos/Clasico.html">clasico</a><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><h5>Sandalia Ninja Zero</h5></a></li>
+	<li><div><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><img src="IMG/Zapatos/Vendidos/5.jpg"></a></div>
+	<a href="C:/Users/HP/Desktop/Zapatería galos/productos/Genero/Masculino.html">Hombre, </a><a href="C:/Users/HP/Desktop/Zapatería galos/productos/Estilos/Moderno.html">moderno</a><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><h5>Sandalia Croaciata</h5></a></li>
+	<li><div><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><img src="IMG/Zapatos/Vendidos/6.jpg"></a></div>
+	<a href="C:/Users/HP/Desktop/Zapatería galos/productos/Genero/Femenino.htmls">Mujer, </a><a href="C:/Users/HP/Desktop/Zapatería galos/productos/Estilos/Clasico.html">clasico</a><a href="C:/Users/HP/Desktop/Zapatería galos/Vendido.html"><h5>Bota Blu</h5></a></li>
+</ul>
+
+</div>
+</body>
+<footer id="contacto">
+	<div class="centermenu">
+	<div class="right"><a href="Formulario.html"><img src="IMG/mail.png"></a><a class="centeritem" href="Formulario.html">Formulario de consulta</a></div>
+<div class="left">
+<p>Zapatería Galos.</p>
+<p>Hecho en Argentina.</p>
+</div>
+</div>
+</footer>
+</html>
